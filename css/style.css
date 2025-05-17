@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;    
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+}
+
+.wrapper{
+    width: 98vw;
+    height: 98vh;
+    background-color: black;
+    color: white;
+}
+
+.texto-izquierda{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-left: 40px;
+}
+
+a{
+    text-decoration: none;  
+}
+
+.navbar{
+    /*borde tamaño tipo y color*/
+      display: flex;
+      justify-content: space-between;
+      color: white;
+      padding: 2em;
+      margin-right: 30px;
+}
+
+.btn-primary{
+    background-color: #808080;
+    color: white;
+    cursor: pointer;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-size: 4em;
+    font-weight: 700;
+    color: #db9c70;
+    margin-left: 40px;
+}
+
+.brand span{
+    color: aqua;
+    margin-top: -9px
+}
+
+span{
+    color: aqua;
+}
+
+.canvas-color{
+    background-color: #35383b;
+    color: white;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}   
+
+.hero { 
+    background: #333; 
+    color: white; 
+    padding: 60px 20px; 
+    text-align: center; 
+}
+        
+.proyecto { 
+    margin-bottom: 20px; 
+}
+
+.conocimientos { 
+    text-align: center; 
+}
+
+.card-title {
+    color: black;
+    font-size: 1.5em; 
+    font-weight: 600;
+    margin-bottom: 5px; 
+}
+
+.card-text {
+    color: #0f0188; 
+    font-size: 1em;
+    margin-bottom: 0px;
+}
+
+.box-tecnologias{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 80px;
+    background-color: #db9c70;
+    color: white;
+    border-radius: 90px;
+    border: 1px solid #808080;
+    position: relative;
+    overflow: auto; 
+}
+.img-tec{
+    background-color: #db9c70;
+    width: 70px;
+    height: 70px;
+    border-radius: 90px auto;
+}
+
+.toggle{
+    visibility: visible;
+}
+
+.foot{
+    position: bottom;
+    bottom: 0px;
+    color: white;
+    justify-content: center;
+    text-size-adjust: 100%;
+    text-align: center;
+}
