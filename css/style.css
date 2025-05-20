@@ -4,7 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;    
+    list-style: none;  
+    text-decoration: none;    
 }
 
 body{
@@ -15,7 +16,6 @@ body{
     min-height: 100vh;
     min-height: 100dvh;
 }
-
 
 .wrapper{
     width: 98vw;
@@ -37,54 +37,13 @@ body{
     margin-left: 40px;
 }
 
-a{
-    text-decoration: none;  
-}
-
-.check{
-    position: relative;
-    width: 50px;
-}
-
-.check:before{
-    content:'';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    background: #333;
-    border-radius: 25px;
-}
-
-.check:after{
-    content:'';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    background: #fff;
-    border-radius: 25px;
-    transition: 0.25s;
-    border: 2px solid #333;
-    box-sizing: border-box;    
-}
-
-.check:checked:after{
-    left: 25px;
-    border: 2px solid #126ef8;
-}
-
-.check:checked:before{
-    left: 25px;
-    background: #126ef8;
-}
-
-
 .navbar{
     /*borde tamaño tipo y color*/
       display: flex;
       justify-content: space-between;
       color: white;
-      padding: 2em;
-      margin-right: 30px;
+      padding: 1em;
+      margin-right: 10px;
 }
 
 .btn-primary{
@@ -96,10 +55,11 @@ a{
 .brand{
     display: flex;
     align-items: center;
-    font-size: 4em;
+    font-size: 3em;
     font-weight: 700;
     color: #db9c70;
-    margin-left: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .brand span{
@@ -118,20 +78,15 @@ span{
     justify-content: left;
     align-items: left;
 }   
-
-.hero { 
-    background: #333; 
-    color: white; 
-    padding: 60px 20px; 
-    text-align: center; 
-}
-        
+     
 .proyecto { 
     margin-bottom: 20px; 
 }
 
 .conocimientos { 
+    align-items: left;
     text-align: center; 
+    margin-left: 10px;
 }
 
 .card-title {
@@ -218,8 +173,8 @@ span{
 @media (max-width: 360px){
     /* Medida de celular básico 360x760 */
     #wrapper {
-        overflow:hidden ;
-        height: 760px;
+        overflow:auto ;
+        height: 730px;
         font-size: 0;
     }
     #navbar{
@@ -229,18 +184,22 @@ span{
       color: #126ef8;
       padding: 1em;
       margin-right: 5px;
-      font-size: 0%;
     }
     #img-der{
     width: 90px;
     height: 70px;
     }
+    #h1{
+        font-size: 2;
+    }    
+    #h2{
+        font-size: 1;
+    }
 }
     
-
 .card {
-    width: 280px;
-    height: 150px;
+    width: 80%;
+    height: 90px auto;
     background: #3498db;
     color: white;
     text-align: center;
@@ -250,17 +209,18 @@ span{
 }
 
 .conocimientos {
-    width: 400px;
-    height: 90px;
+    width: 80%;
+    height: 90px auto;
     background: #3498db;
     align-items: center;
     color: white;
     text-align: center;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 3px;
     transition: transform 0.3s ease-in-out;
 }
+
 .card:hover {
-    transform: scale(1.1); /* Expande la tarjeta */
+    transform: scale(1.12); /* Expande la tarjeta */
 }
 
