@@ -17,10 +17,10 @@ body{
     /*
     display: grid;
     grid-template-rows: auto 1fr auto;*/
-    width: 100%;
+    width: 100dvw;
     height: 100%;
-    min-width: 500px;
-    min-height: 500px;
+    min-width: 432px;
+    min-height: 432px;
 }
 
 .header{
@@ -231,10 +231,33 @@ span{
 }     
 
 /* Cajas responsivas */
-@media(max-width:880px){
+@media(max-width:432px) and (orientation: portrait){
    #cajas caja {
-    width: 40%;
+    width: 432px;
+    height: 697px;
+    text-size-adjust: 1vw;
    } 
+   #h1{
+    text-size-adjust: 1vw;
+   }
+   #info-content{
+    text-size-adjust: 1vw;
+   }   
+}
+
+/* Cajas responsivas */
+@media(max-width:432px) and (orientation: landscape){
+   #cajas caja {
+    width: 697px;
+    height: 432px;
+    text-size-adjust: 1vw;
+   } 
+   #h1{
+    text-size-adjust: 1vw;
+   }
+   #info-content{
+    text-size-adjust: 1vw;
+   }
 }
 /* Una caja con todo el ancho */
 @media(max-width:664px){
