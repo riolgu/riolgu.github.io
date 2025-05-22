@@ -9,124 +9,86 @@
 }
 
 body{
+    background-image: url('../img/OC1Y900.jpg');
+    background-size: 100px 8px;    
     font-family: 'Montserrat', sans-serif;
-    background-color: black;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-    min-height: 100dvh;
-}
-
-.wrapper{
-    width: 98vw;
-    height: 98vh;
-    background-color: black;
+    background-color: rgb(4, 44, 31);
     color: white;
+    /*
+    display: grid;
+    grid-template-rows: auto 1fr auto;*/
+    width: 100%;
+    height: 100%;
+    min-width: 488px;
+    min-height: 600px;
 }
 
 .header{
-    background-color: #db9c70;
+    background-color: #105c36;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.texto-izquierda{
-    font-size: 1.5em;
-    font-weight: 700;
-    margin-left: 40px;
-}
-
-.navbar{
-    /*borde tamaño tipo y color*/
-      display: flex;
-      justify-content: space-between;
-      color: white;
-      padding: 1em;
-      margin-right: 10px;
-}
-
-.btn-primary{
-    background-color: #808080;
-    color: white;
-    cursor: pointer;
-}
-
-.brand{
-    display: flex;
+.inicio{
+    visibility: visible;
+    width: 100%;
+    height: 700px;    
+    background-image: url('../img/img4b.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     align-items: center;
-    font-size: 3em;
-    font-weight: 700;
-    color: #db9c70;
-    margin-top: 10px;
-    margin-left: 10px;
 }
 
-.brand span{
-    color: aqua;
-    margin-top: -9px
+.nav-tabs{
+    background-image: url('../img/OC1Y900.jpg');
+    background-size: 100px 8px;
+    cursor: pointer;
+    align-items: center;
+    height: 53px; 
+    border-top: 5px;  
+}
+
+.nav-item{
+    background-color: rgb(105, 172, 155);
 }
 
 span{
-    color: aqua;
+    color: rgb(2, 58, 27);
 }
 
-.canvas-color{
-    background-color: #35383b;
-    color: white;
-    display: flex;
-    justify-content: left;
-    align-items: left;
-}   
-     
-.proyecto { 
-    margin-bottom: 20px; 
+.logo{
+    margin-right: 10px;
+    cursor: not-allowed;
 }
 
-.conocimientos { 
-    align-items: left;
-    text-align: center; 
-    margin-left: 10px;
-}
-
-.card-title {
-    color: black;
-    font-size: 1.5em; 
-    font-weight: 600;
-    margin-bottom: 5px; 
-}
-
-.card-text {
-    color: #0f0188; 
-    font-size: 1em;
-    margin-bottom: 0px;
+.about{
+    visibility: visible;
+    width: 95%;
+    height: 630px;  
+    align-items: center;  
 }
 
 .box-tecnologias{
     display: flex;
     flex-direction: row;
+    width: 90%;
+    height: 80px;    
+    margin: 10px 10px 10px;   
     justify-content: space-around;
     align-items: center;
-    margin-top: 20px;
-    margin-left: 10px;
-    width: 100%;
-    height: 80px;
-    background-color: #db9c70;
+    background-color: #3b685881;
     color: white;
     border-radius: 90px;
     border: 1px solid #808080;
-    position: relative;
     overflow: auto; 
 }
+
 .img-tec{
     background-color: #db9c70;
     width: 70px;
     height: 70px;
     border-radius: 90px auto;
-}
-
-.toggle{
-    visibility: visible;
 }
 
 .info-content{
@@ -139,17 +101,76 @@ span{
     border-radius: 90px;
 }   
 
-.translate{
+.toggle{
     visibility: visible;
 }
+  
+.proyecto { 
+    margin-bottom: 20px; 
+    color: black;
+}
 
-.foot{
-    position: bottom;
-    bottom: 0px;
-    color: white;
+.proyecto img{
+    width: 100%;
+}
+
+.conocimientos {
+    width: 80%;
+    height: 90px auto;
+    align-items: left;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    border-radius: 3px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.conocimientos img{
+    width: 100%;
+}
+
+.certificados img{
+    width: 150px;
+    height: 90px auto;
+}
+
+.card:hover {
+    transform: scale(1.10); /* Expande la tarjeta */
+}
+
+.info-content{
+    background-color: #274d4081;
+    color: white;   
+    border-radius: 90px;
+    border: 1px solid #69ac9b;
+    text-wrap: pretty;
+}
+
+.info-contacto{
+    visibility: visible;
+    width: 300px;
+    height: 160px;
+    align-self: center;
+    align-items: center;
+    background-color: #d9e4e081;
+    color: rgb(162, 187, 163);   
+    border-radius: 90px;
+    border: 1px solid #69ac9b;
+    text-wrap: pretty;
+}
+
+.h6{
     justify-content: center;
     text-size-adjust: 100%;
-    text-align: center;
+    text-align: center; 
+    font-size: 1em auto;  
+}
+
+.main{
+    visibility: visible;
+    background-size: 100% auto; 
+    background-color: #1a3123;
+    color: white;   
 }
 
 .flags{
@@ -168,59 +189,67 @@ span{
     cursor:pointer;
 }
 
-
-/* Responsive*/
-@media (max-width: 360px){
-    /* Medida de celular básico 360x760 */
-    #wrapper {
-        overflow:auto ;
-        height: 730px;
-        font-size: 0;
-    }
-    #navbar{
-    /*borde tamaño tipo y color*/
-      display: bootstrap;
-      justify-content: space-around;
-      color: #126ef8;
-      padding: 1em;
-      margin-right: 5px;
-    }
-    #img-der{
-    width: 90px;
-    height: 70px;
-    }
-    #h1{
-        font-size: 2;
-    }    
-    #h2{
-        font-size: 1;
-    }
-}
-    
 .card {
     width: 80%;
     height: 90px auto;
-    background: #3498db;
-    color: white;
+    color: black;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
 }
 
-.conocimientos {
-    width: 80%;
-    height: 90px auto;
-    background: #3498db;
+#cajas {
+    display: flex;
     align-items: center;
-    color: white;
+    justify-content: space-between;      
+    width: 80%;
+    background-color: rgb(105, 172, 155);
+}
+
+ .caja{
+  width: 240px;
+  height: 160px;
+  margin-right: 10px;
+  float: none;
+  background-color: #849c979f;
+  text-size-adjust: 100%;
+  transition: transform 0.3s ease-in-out;
+  }
+
+.caja img{
+    width:"240";
+    height:"160";
+}
+
+.canvas-color{
+    background-color: #849c979f;
+    color: rgb(20, 4, 4);
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}  
+
+/* Cajas responsivas */
+@media(max-width:880px){
+   #cajas caja {
+    width: 40%;
+   } 
+}
+/* Una caja con todo el ancho */
+@media(max-width:664px){
+   #cajas caja {
+    width: 60%;
+   } 
+}
+
+.foot{
+    background-color: #105c36;
+    color: white;    
+    position: bottom;
+    bottom: 0px;
+
+    justify-content: center;
+    text-size-adjust: 100%;
     text-align: center;
-    padding: 20px;
-    border-radius: 3px;
-    transition: transform 0.3s ease-in-out;
 }
-
-.card:hover {
-    transform: scale(1.12); /* Expande la tarjeta */
-}
-
