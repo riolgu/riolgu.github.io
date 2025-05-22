@@ -139,8 +139,10 @@ span{
 }
 
 .info-content{
+    width: 100%;
     background-color: #274d4081;
     color: white;   
+    justify-content: center;
     border-radius: 90px;
     border: 1px solid #69ac9b;
     text-wrap: pretty;
@@ -230,6 +232,14 @@ span{
     align-items: left;
 }     
 
+#info-contacto img{
+width: 100%;
+max-width: 30px;
+height: auto;
+min-width: 10px;
+max-width: 30px;
+}   
+
 /* Cajas responsivas */
 @media(max-width:432px) and (orientation: portrait){
    #cajas caja {
@@ -242,7 +252,7 @@ span{
    }
    #info-content{
     text-size-adjust: 1vw;
-   }   
+   }    
 }
 
 /* Cajas responsivas */
