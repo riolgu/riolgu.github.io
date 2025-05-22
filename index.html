@@ -1,158 +1,183 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio RMOG</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link rel="shortcut icon" href="img/portafolio.ico" type="image/x-icon">
-</head>
-
-<body>
-
-    <div class="wrapper">
-        <header>
-            <nav class="navbar">
-
-                <div class="brand"><h2><span>RM</span>OG</h2></div>
-                <div id="flags" class="flags">
-                    <div class="flags__item" data-language="esp">
-                        <img src="img/bdr_Chile.png" width=20
+  </head>
+  <body>
+    <header> 
+        <div class="d-flex justify-content-between flex-row-reverse align-items-center flex-wrap" style="width: 100%">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active"  
+                        id="nav-active"   
+                        role="button">
+                        <img src="img/inicio.png" width=35
                         data-bs-toggle="tooltip"
-                        data-bs-placement="left"
-                        data-bs-title="Español">
-                    </div>
-                <!--<input type="checkbox" class = "check">-->
-                    <img src="img/bi-flechas.png" width=20>
-                    <div class="flags__item" data-language="ing">
-                        <img src="img/bdr_eeuu.png" width=20
-                        data-bs-toggle="tooltip"
-                        data-bs-placement="right"
-                        data-bs-title="Inglés">
-                    </div>
-                </div>               
-
-                <div class="btn-group" role="group" aria-label="Basic example">
-                    <a class="btn btn-info"     
+                        data-bs-title="Inicio / Home"
+                        data-bs-placement="left">
+                    </a>                  
+                </li>            
+                <li class="nav-item">
+                    <a class="nav-link"   
                         data-bs-toggle="collapse" 
                         href="#about" 
                         role="button" 
                         aria-expanded="false" 
                         aria-controls="about">
-                        <img src="img/SobreMe.png" width=25
+                        <img src="img/sobre_me.png" width=34 height="34"
                         data-bs-toggle="tooltip"
                         data-bs-title="Acerca de mí / About me"
                         data-bs-placement="left">
-                    </a>  
+                    </a>                  
+                </li>
 
-                    <a class="btn btn-primary" 
+                <li class="nav-item">
+                    <a class="nav-link" 
                         data-bs-toggle="offcanvas" 
-                        href="#staticBackdrop" 
+                        href="#canvasLeft" 
                         role="button" 
                         aria-expanded="false" 
-                        aria-controls="staticBackdrop"> 
-                        <img src="img/Trabajos.png" width=25 
+                        aria-controls="canvasLeft"> 
+                        <img src="img/Trabajos.png" width=34 height="34" 
                         data-bs-toggle="tooltip"
                         data-bs-title="Experiencia / Experience"
                         data-bs-placement="left">
-                    </a>     
-
-                    <a class="btn btn-primary" 
+                    </a>                  
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" 
                         data-bs-toggle="offcanvas" 
-                        href="#offcanvasRight" 
+                        href="#canvasRight" 
                         role="button" 
                         aria-expanded="false" 
-                        aria-controls="offcanvasRight">
-                        <img src="img/cerebro.png" width=25
+                        aria-controls="canvasRight">
+                        <img src="img/cerebro.png" width=34 height="34"
                         data-bs-toggle="tooltip"
                         data-bs-title="Conocimientos / Knowledge"
                         data-bs-placement="left">
-                    </a>                          
-                    
-                    <a class="btn btn-primary" 
+                    </a>                
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" 
                         data-bs-toggle="offcanvas" 
-                        href="#offcanvasBottom" 
+                        href="#canvasBottom" 
                         role="button" 
                         aria-expanded="false" 
-                        aria-controls="offcanvasBottom">
-                        <img src="img/certificados.png" width=25
+                        aria-controls="canvasBottom">
+                        <img src="img/certificados.png" width=34 height="34"
                         data-bs-toggle="tooltip"
                         data-bs-title="Certificados / Certificates"
                         data-bs-placement="left">
-                    </a>                          
-                </div>
+                    </a>                
+                </li>
+                                                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"   role="button" aria-expanded="false"><img src="img/bi-flechas.png" width=34 height="34">
+                    </a>
+                    <div id="flags" class="flags"> 
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item flags__item" href="#" data-language="esp" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                                <img src="img/bdr_Chile.png" width="60">
+                                </a>                            
+                            </li>
+                            <li>
+                                <a class="dropdown-item flags__item" href="#" data-language="ing" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                                <img src="img/bdr_eeuu.png" width="60">
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item flags__item disabled" href="#" data-language="por">
+                                Portugués <img src="img/bdr_Portugal.png" width=20>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
 
-            </nav>
-        </header>
+                <!--
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">&nbsp;</a>
+                </li>
+                -->
+                <a class="navbar-brand" href="#">
+                    <div class="logo">
+                        <img src="/img/rmog.png"  width="100" height="34">
+                    </div>
+                </a>
 
-        <div class="row">
-            <div class="col">
-                <div class="collapse multi-collapse show" id="about">
-                    <main class="container text-center">
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+
+        <!--  Inicio  -->
+        <div class="collapse multi-collapse show inicio" id="home">
+        <!--  Acerca de mí  -->
+                <div class="collapse multi-collapse about text-center m-0 row justify-content-center" id="about">
+                    <div class="col-auto p5">
                         <div class="info-content">  
-                            <h1 data-section="profile" data-value="saludo"><img src="img/me.png" alt="Richard Milton Olivares Gutiérrez" width=50>Hola, soy Richard Milton</h1>
+                            <h1 data-section="profile" data-value="saludo"><img src="img/me.png" alt="Richard Milton Olivares Gutiérrez"  width="50" height="50">Hola, soy <span>Richard Milton</span></h1>
                             <p text-align:justify data-section="profile" data-value="presentacion"> Aunque empiezo a mis 60 formándome en <span>Full Stack</span>, ya tengo experiencia Back End en Mainframe, programando <span>Cobol</span> por más de 18 años en AFP y Banca. Me gusta aprender y me apasiona la tecnología. Espero que mi portafolio sea de su agrado y que podamos trabajar juntos en el futuro. ¡Gracias por visitar mi portafolio!</p>
                             <hr> 
                         </div>   
+                        <p>&nbsp;</p>
                         
-                        <div class="row">
-                            <div class="col">
-                                <img class="img-der" src="img/img-2.png" alt="Richard Milton" width=250>
-                            </div>
-                            <div class="col">
-                            <p>&nbsp;</p>
-                            <div>                              
-                                <a href="mailto:richard.olivares@gmail" target="_blank"><img src="img/email.png" width=50><li>richard.olivares@gmail</li></a>
-                                <a href="https://wa.me/56976589290" target="_blank"><img src="img/whatsapp.png" width=50></a>
-                                <a href="https://github.com/riolgu" target="_blank"><img src="img/github.png" width=50></a>
-                                <a href="https://www.linkedin.com/in/richard-milton-olivares-gutierrez-12780593/" target="_blank"><img src="img/Linkedin.png" width=50></a>                
-                                <a href="Currículo Vitae - Programador - Richard Olivares G.pdf" download="CV_Richard_Milton.pdf"><img src="img/descargaCV2.png" width=50></a>
-                            </div>
-                            </div>
-                        
-                            <div class="row">
-                                <p>&nbsp;</p>
-                                <p data-section="Otros" data-value="subtitu01">Tecnologías</p>
-                                <div class="box-tecnologias">
-                                    <img src="img/cobol.png" alt="Cobol" class="imgTec" width=50 auto>
-                                    <img src="img/php.png" alt="PHP" class="imgTec" width=50 auto>
-                                    <img src="img/angular.png" alt="Angular" class="imgTec" width=50 auto>
-                                    <img src="img/laravel.png" alt="Laravel" class="imgTec" width=70 auto>
-                                    <img src="img/javascript.png" alt="JavaScript" class="imgTec" width=50>
-                                    <img src="img/html5.png" alt="HTML5" class="imgTec" width=40>
-                                    <img src="img/css.png" alt="CSS" class="imgTec" width=50>
-
-                                    <img src="img/sqlserver.png" alt="SQL Server" class="imgTec" width=50>
-                                    <img src="img/oracle.png" alt="Oracle" class="imgTec" width=50>
-                                    <img src="img/db2.png" alt="DB2" class="imgTec" width=50>
-                                    <img src="img/mysql.png" alt="MySQL" class="imgTec" width=50>
-                                    <img src="img/mariaDB.png" alt="MariaDB" class="imgTec" width=50>
-                                    <img src="img/postgreSQL.png" alt="PostgreSQL" class="imgTec" width=50>
-
-                                </div>
-                            </div>                
+                        <div class="info-contacto">  
+                            <p></p>                          
+                            <a href="mailto:richard.olivares@gmail.com" target="_blank"><img src="img/email.png" width="50" height="50"><li>richard.olivares@gmail.com</li></a>
+                            <a href="https://wa.me/56976589290" target="_blank"><img src="img/whatsapp.png" width="50" height="50"></a>
+                            <a href="https://github.com/riolgu" target="_blank"><img src="img/github.png" width="50" height="43"></a>
+                            <a href="https://www.linkedin.com/in/richard-milton-olivares-gutierrez-12780593/" target="_blank"><img src="img/Linkedin.png" width="50" height="50"></a>                
+                            <a href="Currículo Vitae - Programador - Richard Olivares G.pdf" download="CV_Richard_Milton.pdf"><img src="img/descargaCV2.png" width="50" height="50"></a>
                         </div>
-                    </main>
+                       
+                        <div class="row">
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p data-section="Otros" data-value="subtitu01">Tecnologías</p>
+                            <div class="box-tecnologias">
+                                <img src="img/cobol.png" alt="Cobol" class="imgTec" width=50 auto>
+                                <img src="img/php.png" alt="PHP" class="imgTec" width=50 auto>
+                                <img src="img/angular.png" alt="Angular" class="imgTec" width=50 auto>
+                                <img src="img/laravel.png" alt="Laravel" class="imgTec" width=70 auto>
+                                <img src="img/javascript.png" alt="JavaScript" class="imgTec" width=50>
+                                <img src="img/html5.png" alt="HTML5" class="imgTec" width=40>
+                                <img src="img/css.png" alt="CSS" class="imgTec" width=50>
+
+                                <img src="img/sqlserver.png" alt="SQL Server" class="imgTec" width=50>
+                                <img src="img/oracle.png" alt="Oracle" class="imgTec" width=50>
+                                <img src="img/db2.png" alt="DB2" class="imgTec" width=50>
+                                <img src="img/mysql.png" alt="MySQL" class="imgTec" width=50>
+                                <img src="img/mariaDB.png" alt="MariaDB" class="imgTec" width=50>
+                                <img src="img/postgreSQL.png" alt="PostgreSQL" class="imgTec" width=50>
+
+                            </div>
+                        </div> 
+                    </div>               
                 </div>
-            </div>
-        </div>            
-   
-        <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+        </div>
+        
+        <!--  CANVAS Izq Proyectos--> 
+        <div class="offcanvas offcanvas-start canvas-color" tabindex="-1" id="canvasLeft" aria-labelledby="canvasLeft">
             <div class="offcanvas-header canvas-color">
-                 <h2 class="offcanvas-title" id="staticBackdropLabel" data-section="conocimientosTIT" data-value="subtitulo00">Experiencia <img src="img/experiencia.png" width="60"></h2>
+                 <h2 class="offcanvas-title" id="canvasLeft" data-section="conocimientosTIT" data-value="subtitulo00">Experiencia <img src="img/experiencia.png" width="60"></h2>
                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
             </div>
             <div class="offcanvas-body canvas-color">
-
                 <ul>
                     <li>
                         <div class="card proyecto">
                             <div class="card-body">
                                 <h6 class="card-title" data-section="experiencia" data-value="lugar01">INDRA / Tecnocom</h6>
-                                <img src="img/linea1.png" width=100%>
+                                <img src="img/linea1.png">
                                 <p class="card-text ">mar. 2023 - jul. 2024</p>
-                                <img src="img/linea1.png" width=100%>
+                                <img src="img/linea1.png">
                                 <p class="card-text" data-section="experiencia" data-value="Descripcion01">Implementación de requerimientos de clientes varios en uso de TC <strong>Mastercard y Visa</strong>, programación en COBOL, CICs, MQ, Oracle, Shell Script.</p>
                             </div>
                         </div>
@@ -162,9 +187,9 @@
                         <div class="card proyecto">
                             <div class="card-body">
                                 <h6 class="card-title" data-section="experiencia" data-value="lugar02">IBM Chile por Xinerlink</h6>
-                                <img src="img/linea1.png" width=100%>
+                                <img src="img/linea1.png">
                                 <p class="card-text ">feb. 2020 - nov. 2022</p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="experiencia" data-value="Descripcion02"><strong>Proyecto BECH</strong>, cliente Bancoestado: Cobol Batch, CICs, DB2, VSAM, JCL y Jira.</p>
                             </div>
                         </div>
@@ -174,9 +199,9 @@
                         <div class="card proyecto">
                             <div class="card-body">
                                 <h6 class="card-title" data-section="experiencia" data-value="lugar03">IBM Chile por Evertec</h6>
-                                <img src="img/linea1.png" width=100%>
+                                <img src="img/linea1.png">
                                 <p class="card-text ">oct. 2017 - dic. 2019</p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="experiencia" data-value="Descripcion03"><strong>Proyecto BECH</strong>, cliente Bancoestado: Cobol Batch, CICs, DB2, VSAM, JCL y Jira.</p>
                             </div>
                         </div>
@@ -186,9 +211,9 @@
                         <div class="card proyecto">
                             <div class="card-body">
                                 <h6 class="card-title" data-section="experiencia" data-value="lugar04">Banco BBVA por GEP Consultores</h6>
-                                <img src="img/linea1.png" width=100%>
+                                <img src="img/linea1.png">
                                 <p class="card-text ">feb. 2017 - jun. 2017</p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="experiencia" data-value="Descripcion04"><strong>Proyecto IPS</strong>, Cobol Batch, Control-M, DB2 y JCL.</p>
                             </div>
                         </div>
@@ -198,9 +223,9 @@
                         <div class="card proyecto">
                             <div class="card-body">
                                 <p class="card-title" data-section="experiencia" data-value="lugar05">Banco BBVA por Soluservicios</p>
-                                <img src="img/linea1.png" width=100%>
+                                <img src="img/linea1.png">
                                 <p class="card-text ">nov. 2010 - mar. 2016</p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="experiencia" data-value="Descripcion05">Proyectos varios: <strong>IFRS</strong>, <strong>Nacar ligero</strong>, <strong>Funcional para fábrica de software</strong>, etc: Cobol Batch, CICs, DB2, VSAM, JCL y TSO.</p>
                             </div>
                         </div>
@@ -210,9 +235,9 @@
                         <div class="card proyecto">
                             <div class="card-body">
                                 <p class="card-title" data-section="experiencia" data-value="lugar06">Movistar Chile por GST</p>
-                                <img src="img/linea1.png" width=100%>
+                                <img src="img/linea1.png">
                                 <p class="card-text ">ene. 2009 - abr. 2009</p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="experiencia" data-value="Descripcion06"><strong>Proyecto Planes Flexibles</strong>: Cobol Batch, CICs, DB2, VSAM, JCL y Roscoe.</p>
                             </div>
                         </div>
@@ -222,9 +247,9 @@
                         <div class="card proyecto">
                             <div class="card-body">
                                 <p class="card-title" data-section="experiencia" data-value="lugar07">Banco Santander por Slinges/Altec</p>
-                                <img src="img/linea1.png" width=100%>
+                                <img src="img/linea1.png">
                                 <p class="card-text ">mar. 2003 - nov. 2006</p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="experiencia" data-value="Descripcion07">"<strong>ETL</strong>: Cobol Batch, DB2, VSAM, JCL - <strong>BI</strong>: toma de Desiciones Gerenciales - <strong>Oficinas</strong>: intranet de Oficinas."</p>
                             </div>
                         </div>
@@ -234,9 +259,9 @@
                         <div class="card proyecto">
                             <div class="card-body">
                                 <p class="card-title" data-section="experiencia" data-value="lugar08">AFP Provida</p>
-                                <img src="img/linea1.png" width=100%>
+                                <img src="img/linea1.png">
                                 <p class="card-text ">feb. 1991 - oct. 2002</p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="experiencia" data-value="Descripcion08"><strong>Administrativo</strong> -> <strong>Administrativo Especializado</strong> -> <strong>Programador en Sistemas Centrales</strong> -> <strong>Programador área Cobranzas</strong>: Cobol batch, CICs, Oracle RDB y DCL.</p>
                             </div>
                         </div>
@@ -245,10 +270,11 @@
                 
             </div>
         </div>            
-   
-        <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+
+        <!--  CANVAS Der Conocimientos-->        
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="canvasRight" aria-labelledby="canvasRight">
             <div class="offcanvas-header canvas-color">
-                 <h2 class="offcanvas-title" id="staticBackdropLabel" data-section="conocimientosTIT" data-value="subtitulo01">Conocimientos<img src="img/cerebro.png" width="60"></h2>
+                 <h2 class="offcanvas-title" id="canvasLeft" data-section="conocimientosTIT" data-value="subtitulo01">Conocimientos<img src="img/cerebro.png" width="60"></h2>
                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
             </div>
             <div class="offcanvas-body canvas-color">
@@ -258,9 +284,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <p class="card-title">HTML (★)</p>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/html5.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/html5.png"></p>
+                                <img src="img/linea1.png">
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip01">Lenguaje de Marcado de Hipertexto en versión 5 sobre W3C.</p>
                             </div>
                         </div>
@@ -271,9 +297,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">CSS (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/css.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/css.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip02">Lenguaje que define el estilo y diseño de elementos HTML en una página web.</p>
                             </div>
                         </div>
@@ -284,9 +310,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">Grid (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/grid.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/grid.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip03">Utilidad HTML/CSS para diseñar estructuras de páginas en 2 dimensiones: fila - columna.</p>
                             </div>
                         </div>
@@ -297,9 +323,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">Flexbox (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/flexbox.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/flexbox.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip04">Utilidad HTML/CSS para diseñar layouts de una sola dimensión: horizontal o vertical.</p>
                             </div>
                         </div>
@@ -310,9 +336,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">Bootstrap (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/bootstrap.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/bootstrap.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip05">Utilidad HTML/CSS que permite que las páginas sean dinámicas e interactivas, sin recargarlas.</p>
                             </div>
                         </div>
@@ -323,9 +349,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">JavaScript (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/javascript.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/javascript.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip06">Permite que las páginas sean dinámicas e interactivas, sin recargarlas.</p>
                             </div>
                         </div>
@@ -339,9 +365,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">Cobol&nbsp;(★★★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/cobol.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/cobol.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip07">Lenguaje de programación compilado, modular y rápido.</p>
                             </div>
                         </div>
@@ -352,9 +378,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">Batch</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/cobol.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/cobol.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip08">Modalidad del Cobol que permite procesos por lotes de grandes volúmenes de datos sin intervención directa del usuario.</p>
                             </div>
                         </div>
@@ -365,9 +391,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">Servicios&nbsp;Batch</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/cobol.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/cobol.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip09">Modalidad del Cobol que se ejecuta por una solicitud específica y puede ser llamado por otro cobol, API o Middleware) se ejecuta de forma asíncrona.</p>
                             </div>
                         </div>
@@ -378,9 +404,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">CICs</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/CICs.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/CICs.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip10">Modalidad del Cobol que se ejecuta en un entorno de tiempo compartido, donde múltiples usuarios pueden interactuar con el sistema al mismo tiempo.</p>
                             </div>
                         </div>
@@ -391,9 +417,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">Servicios&nbsp;Cics</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/CICs.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/CICs.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip11">Modalidad del Cobol que con enfoque más modular y reutilizable, es expuesto como Arquitectura Orientada a Servicios y llamado por API, Middleware o Pathway) se ejecuta de forma sincrónica o sea se espera respuesta inmediata.</p>
                             </div>
                         </div>
@@ -404,9 +430,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">PHP (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/php.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/php.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip12">Lenguaje de programación interpretado.</p>
                             </div>
                         </div>
@@ -416,10 +442,10 @@
                     <li>
                         <div class="card conocimientos">
                             <div class="card-body">
-                                <h6 class="card-title">Eloquend ORM (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/eloquend.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <h6 class="card-title">Eloquent ORM (★)</h6>
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/eloquend.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip13">Utilidad del PHP con uso más intuitivo de instrucciones SQL, sin tanta codificación, pero trabaja con Modelos.</p>
                             </div>
                         </div>
@@ -430,9 +456,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">QueryBuilder (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/querybuilder.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/querybuilder.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip14">Herramienta de Laravel que permite escribir consultas SQL robustas sin necesidad de usar Modelos.</p>
                             </div>
                         </div>
@@ -443,9 +469,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">MVC (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/mvc.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/mvc.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip15">Modelo-Vista-Controlador, es un patrón de arquitectura de 3 capas.</p>
                             </div>
                         </div>
@@ -456,9 +482,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">Angular (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/angular.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/angular.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip16">Marco de trabajo basado en TypeScript para construir aplicaciones dinámicas y escalables.</p>
                             </div>
                         </div>
@@ -469,9 +495,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">Laravel (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/laravel.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/laravel.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip17">Marco de trabajo que integra MVC y agrega muchas herramientas útiles para el desarrollo web.</p>
                             </div>
                         </div>
@@ -482,9 +508,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">JavaScript (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/javascript.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/javascript.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip18">A través de Node.js se encarga de la lógica del servidor, procesamiento de datos y la comunicación con bases de datos.</p>
                             </div>
                         </div>
@@ -495,9 +521,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">Node.js (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/NodeJS.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/NodeJS.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip19">Entorno de ejecución que permite correr JavaScript en el Backend.</p>
                             </div>
                         </div>
@@ -508,9 +534,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">TypeScript (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/typescript.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/typescript.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip20">Super set para javascript, maneja la estructura del código con tipado estático.</p>
                             </div>
                         </div>
@@ -521,9 +547,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">jQuery (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/jquery.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/jquery.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip21">Biblioteca de javascript, manipula el DOM, eventos y AJAX.</p>
                             </div>
                         </div>
@@ -534,9 +560,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">DOM (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/dom.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/dom.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip22">Modelo estructurado en forma de árbol de una página web, que permite su manipulación.</p>
                             </div>
                         </div>
@@ -547,9 +573,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">AJAX (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/ajax.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/ajax.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip23">Técnica JavaScript asíncrona para manipular una página web sin recargarla.</p>
                             </div>
                         </div>
@@ -560,9 +586,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">Python (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/python.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/python.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip24">Lenguaje de programación de alto nivel, interpretado, multipropósito compatible con múltiples plataformas.</p>
                             </div>
                         </div>
@@ -573,9 +599,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">JSON (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/Json.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/Json.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip25">Formato de texto ligero para almacenar y transmitir datos, similar al XML, pero más sencillo e eficiente.</p>
                             </div>
                         </div>
@@ -586,9 +612,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">XML (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/Xml.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/Xml.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip26">Formato de texto ligero para almacenar y transmitir datos.</p>
                             </div>
                         </div>
@@ -599,9 +625,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">API REST (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/apirest.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/apirest.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip27">Interfax que usa REST para comunicación entre sistemas.</p>
                             </div>
                         </div>
@@ -616,9 +642,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">ORACLE (★★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/oracle.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/oracle.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip28">Base de tipo relacional RDBMS para almacenar y gestionar grandes volúmenes de datos.</p>
                             </div>
                         </div>
@@ -629,9 +655,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">PL/SQL (★★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/PL-SQL.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/PL-SQL.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip29">Lenguaje de programación procedural para Oracle permite: funciones, procedimientos y disparadores -  además del SQL simple.</p>
                             </div>
                         </div>
@@ -642,9 +668,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">DB2 (★★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/db2.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/db2.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip30">Base de tipo relacional RDBMS para almacenar y gestionar grandes volúmenes de datos.</p>
                             </div>
                         </div>
@@ -655,9 +681,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">SQL Server (★★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/sqlserver.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/sqlserver.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip31">Base de tipo relacional RDBMS, de código abierto, para almacenar y gestionar datos.</p>
                             </div>
                         </div>
@@ -668,9 +694,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">mySQL (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/mysql.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/mysql.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip32">Base de tipo relacional RDBMS, de código abierto, para almacenar y gestionar datos.</p>
                             </div>
                         </div>
@@ -681,9 +707,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">mariaDB (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/mariadb.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/mariadb.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip33">Base de tipo relacional RDBMS, de código abierto, para almacenar y gestionar datos más rápida que mySQL.</p>
                             </div>
                         </div>
@@ -694,9 +720,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">PostgreSQL (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/postgreSQL.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/postgreSQL.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip34">Base de tipo relacional RDBMS, de código abierto, para almacenar y gestionar datos.</p>
                             </div>
                         </div>
@@ -710,9 +736,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">Linux (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/linux.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/linux.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip35">Sistema operativo de código abierto, basado en Unix, para servidores y computadoras personales.</p>
                             </div>
                         </div>
@@ -723,9 +749,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">Unix (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/unix.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/unix.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip36">Sistema operativo de código abierto, para servidores y computadoras personales.</p>
                             </div>
                         </div>
@@ -736,9 +762,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">Z/os (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/zOs.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/zOs.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip37">Sistema operativo de IBM, para servidores y computadoras personales.</p>
                             </div>
                         </div>
@@ -749,9 +775,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">Windows (★★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/windows.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/windows.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip38">Sistema operativo de Microsoft, para servidores y computadoras personales.</p>
                             </div>
                         </div>
@@ -764,9 +790,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">GitHub (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/github.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/github.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip39">Plataforma de desarrollo colaborativo, para gestionar el código fuente.</p>
                             </div>
                         </div>
@@ -777,9 +803,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">Changeman (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/changeman.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/changeman.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip40">Plataforma de IBM, para gestionar el código fuente.</p>
                             </div>
                         </div>
@@ -793,9 +819,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">Visual Studio Code (★★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/visualstudiocode.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/visualstudiocode.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip41">Editor de código fuente, multiplataforma, para desarrollo web.</p>
                             </div>
                         </div>
@@ -806,9 +832,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">Notepad++ (★★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/notepad++.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/notepad++.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip42">Editor de texto, para desarrollo web.</p>
                             </div>
                         </div>
@@ -819,9 +845,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">SQL Developer (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/sqldeveloper.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/sqldeveloper.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip43">Herramienta de Oracle, para gestionar bases de datos.</p>
                             </div>
                         </div>
@@ -832,9 +858,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">Toad (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/toad.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/toad.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip44">Herramienta de Modelación para Oracle, DB2, y SQL Server.</p>
                             </div>
                         </div>
@@ -845,9 +871,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">SQL Server Management (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/sqlservermng.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/sqlservermng.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip45">Herramienta de Modelación para SQL Server.</p>
                             </div>
                         </div>
@@ -858,9 +884,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">pgAdmin (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/pgAdmin.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/pgAdmin.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip46">Herramienta de postgresSQL, para gestionar bases de datos.</p>
                             </div>
                         </div>
@@ -871,9 +897,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">XAPPM (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/xampp.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/xampp.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip47">Paquete de software gratuito para tener un servidor web bajo Apache, que incluye PHP, PERL, MySQL y mariaDB.</p>
                             </div>
                         </div>
@@ -884,9 +910,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">phpMyAdmin (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/phpmyadmin.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/phpmyadmin.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip48">Herramienta de XAMPP, para gestionar bases de datos.</p>
                             </div>
                         </div>
@@ -897,9 +923,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">Power BI (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/PowerBI.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/PowerBI.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip49">Plataforma de análisis de datos de Microsoft que permite visualizar información mediante dashboards interactivos y reportes dinámicos.</p>
                             </div>
                         </div>
@@ -910,9 +936,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">Word (★★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/word.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/word.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip50">Editor de texto de Microsoft - mailing y macros.</p>
                             </div>
                         </div>
@@ -923,9 +949,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">Excel (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/excel.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/excel.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip51">Planilla de Cálculo de Microsoft - tablas dinámicas - macros.</p>
                             </div>
                         </div>
@@ -936,9 +962,9 @@
                         <div class="card conocimientos">
                             <div class="card-body">
                                 <h6 class="card-title">Access (★)</h6>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/access.png" width=50></p>
-                                <img src="img/linea1.png" width=100%>                        
+                                <img src="img/linea1.png">
+                                <p class="card-text "><img src="img/access.png"></p>
+                                <img src="img/linea1.png">                        
                                 <p class="card-text" data-section="conocimientos" data-value="Descrip52">Sistema de gestión de bases de datos de Microsoft que combina un motor relacional con herramientas para crear formularios, consultas e informes.</p>
                             </div>
                         </div>
@@ -949,108 +975,55 @@
             </div>
         </div>
 
-   
-        <div class="offcanvas offcanvas-bottom" data-bs-backdrop="static" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">            
+        <!--  CANVAS Abajo Certificaiones-->   
+        <div class="offcanvas offcanvas-bottom canvas-color" tabindex="-1" id="canvasBottom" aria-labelledby="canvasBottomLabel">            
             <div class="offcanvas-header canvas-color">
-                 <h2 class="offcanvas-title" id="staticBackdropLabel"
+                 <h2 class="offcanvas-title" id="canvasBottom"
                   data-section="conocimientosTIT" data-value="subtitulo02">Certificados<img src="img/certificados.png" width="60"></h2>
                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
             </div>
-            <div class="offcanvas-body canvas-color">
-                <ul>
-                    <li>
-                        <div class="card conocimientos card-container">
-                            <div class="card-body">
-                                <p class="card-title" data-section="Certificados" data-value="certif01"><span>Titulo de Programador de Aplicaciones</span> <strong>CFT CEC</strong></p>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/Certificado_Programador.png" width=300></p>
-                                <img src="img/linea1.png" width=100%>
-                            </div>
-                        </div>
-                        <p>&nbsp;</p>
-                    </li>
+            <div class="offcanvas-body small canvas-color">
+                <section id="cajas">
 
-                    <li>
-                        <div class="card conocimientos">
-                            <div class="card-body">
-                                <p class="card-title" data-section="Certificados" data-value="certif02"><span>UDEMY</span> "De cero a Full Stack"</p>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/cert_fullstack.jpg" width=300></p>
-                                <img src="img/linea1.png" width=100%>
-                            </div>
+                        <div class="caja">
+                            <img src="img/Certificado_Programador.png" width="240" height="160">
                         </div>
-                        <p>&nbsp;</p>
-                    </li>
 
-                    <li>
-                        <div class="card conocimientos">
-                            <div class="card-body">
-                                <p class="card-title" data-section="Certificados" data-value="certif03"><span>UDEMY</span> "Oracle Database 12c, lenguaje de programación PL/SQL</p>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/cert_plsql.jpg" width=300></p>
-                                <img src="img/linea1.png" width=100%>
-                            </div>
+                        <div class="caja">
+                            <img src="img/cert_fullstack.jpg" width="240" height="160">
+                        </div>   
+                        <div class="caja">
+                            <img src="img/cert_plsql.jpg" width="240" height="160">
                         </div>
-                        <p>&nbsp;</p>
-                    </li>
-
-                    <li>
-                        <div class="card conocimientos">
-                            <div class="card-body">
-                                <p class="card-title" data-section="Certificados" data-value="certif04"><span>UDEMY</span> "AWK Shell Scripting, de novato a experto</p>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/cert_shellscript.jpg" width=300></p>
-                                <img src="img/linea1.png" width=100%>
-                            </div>
+      
+                        <div class="caja">
+                            <img src="img/cert_shellscript.jpg" width="240" height="160">
                         </div>
-                        <p>&nbsp;</p>
-                    </li>
-
-                    <li>
-                        <div class="card conocimientos">
-                            <div class="card-body">
-                                <p class="card-title" data-section="Certificados" data-value="certif05"><span>UDEMY</span> "Business Intelligence para todos</p>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/cert_BI.jpg" width=300></p>
-                                <img src="img/linea1.png" width=100%>
-                            </div>
+  
+                        <div class="caja">
+                            <img src="img/cert_BI.jpg" width="240" height="160">
                         </div>
-                        <p>&nbsp;</p>
-                    </li>
-
-                    <li>
-                        <div class="card conocimientos">
-                            <div class="card-body">
-                                <p class="card-title" data-section="Certificados" data-value="certif06"><span>CEO Solutions</span> "Power BI para toma de Decisiones</p>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/cent_CEO_BI.png" width=300></p>
-                                <img src="img/linea1.png" width=100%>
-                            </div>
+    
+                        <div class="caja">
+                            <img src="img/cent_CEO_BI.png" width="240" height="160">
                         </div>
-                        <p>&nbsp;</p>
-                    </li>
 
-                    <li>
-                        <div class="card conocimientos">
-                            <div class="card-body">
-                                <p class="card-title" data-section="Certificados" data-value="certif07"><span>Microsoft TEC</span> "Mastering Microsoft Visual Basic Fundamentals</p>
-                                <img src="img/linea1.png" width=100%>
-                                <p class="card-text "><img src="img/cert_vb6.jpg" width=300></td></p>
-                                <img src="img/linea1.png" width=100%>
-                            </div>
-                        </div>
-                        <p>&nbsp;</p>
-                    </li>
-
-                </ul>  
+                        <div class="caja">
+                            <img src="img/cert_vb6.jpg" width="240" height="160">
+                        </div>  
+                                           
+                                  
+                </section>
             </div>
-        </div>    
+        </div>   
+    </main>
 
-        <footer  class="foot">
-            <p data-section="Otros" data-value="foot01">&copy; 2025 Portafolio diseñado en BootStrap.</p>
-        </footer>
-    </div>
+    <footer  class="foot">
+        <p data-section="Otros" data-value="foot01">&copy; 2025 Portafolio diseñado en BootStrap y javaScript.</p>
+    </footer>
+
+
     <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-</body>
+  </body>
 </html>
