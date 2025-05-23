@@ -17,6 +17,7 @@ body{
     /*
     display: grid;
     grid-template-rows: auto 1fr auto;*/
+    font-size: 2vw;
     width: 100dvw;
     height: 100%;
     min-width: 432px;
@@ -92,7 +93,7 @@ span{
 }
 
 .info-content{
-    text-size-adjust: 70%;
+    text-size-adjust: 1.2rem;
 }
 
 .img-der{
@@ -142,9 +143,9 @@ span{
     width: 100%;
     background-color: #274d4081;
     color: white;   
-    justify-content: center;
     border-radius: 90px;
     border: 1px solid #69ac9b;
+    font-size: 1.2rem;
     text-wrap: pretty;
 }
 
@@ -245,13 +246,12 @@ max-width: 30px;
    #cajas caja {
     width: 432px;
     height: 697px;
-    text-size-adjust: 1vw;
    } 
    #h1{
     text-size-adjust: 1vw;
    }
    #info-content{
-    text-size-adjust: 1vw;
+    text-size-adjust: 10px;
    }    
 }
 
@@ -260,13 +260,12 @@ max-width: 30px;
    #cajas caja {
     width: 697px;
     height: 432px;
-    text-size-adjust: 1vw;
    } 
    #h1{
     text-size-adjust: 1vw;
    }
    #info-content{
-    text-size-adjust: 1vw;
+    text-size-adjust: 12px;
    }
 }
 /* Una caja con todo el ancho */
