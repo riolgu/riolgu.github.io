@@ -51,7 +51,7 @@ body{
 }
 
 .nav-item{
-    background-color: rgb(105, 172, 155);
+    background-color: rgba(14, 122, 95, 0);
 }
 
 span{
@@ -73,9 +73,12 @@ span{
 .box-tecnologias{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    margin-left: 5%;    
     width: 90%;
-    height: 80px;    
-    margin: 10px 10px 10px;   
+    height: 80px;     
     justify-content: space-around;
     align-items: center;
     background-color: #3b685881;
@@ -140,23 +143,30 @@ span{
 }
 
 .info-content{
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+    margin-left: 3%;
     background-color: #274d4081;
     color: white;   
     border-radius: 90px;
     border: 1px solid #69ac9b;
-    font-size: 1.2rem;
     text-wrap: pretty;
 }
 
+.info-text{
+    display: flex;
+    justify-content: center;    
+    width: 70vw;
+}
+
 .info-contacto{
-    visibility: visible;
-    width: 300px;
-    height: 160px;
-    align-self: center;
-    align-items: center;
-    background-color: #d9e4e081;
-    color: rgb(162, 187, 163);   
+    margin-left: 38%;
+    width: 270px;
+    height: 150px;
+    background-color: #d9e4e0c2;
+    color: rgb(224, 233, 224);   
     border-radius: 90px;
     border: 1px solid #69ac9b;
     text-wrap: pretty;
