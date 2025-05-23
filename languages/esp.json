@@ -1,6 +1,6 @@
 {
     "profile": {
-        "saludo": "Hola, soy Richard Milton",
+        "saludo": "Hola, soy Richard",
         "presentacion": "Aunque empiezo a mis 60 en formándome en <span>Full Stack</span>, ya tengo experiencia Back End en Mainframe, programando <span>Cobol</span> por más de 18 años en AFP y Banca. Me gusta aprender y me apasiona la tecnología. Espero que mi portafolio sea de su agrado y que podamos trabajar juntos en el futuro. ¡Gracias por visitar mi portafolio!"
     },
     "experiencia": {
@@ -64,7 +64,7 @@
         "Descrip11": "Modalidad del Cobol que con enfoque más modular y reutilizable, es expuesto como Arquitectura Orientada a Servicios y llamado por API, Middleware o Pathway) se ejecuta de forma sincrónica o sea se espera respuesta inmediata.",
         "titulo12": "PHP (★)",
         "Descrip12": "Lenguaje de programación interpretado.", 
-        "titulo13": "Eloquend ORM (★)",
+        "titulo13": "Eloquent ORM (★)",
         "Descrip13": "Utilidad del PHP con uso más intuitivo de instrucciones SQL, sin tanta codificación, pero trabaja con Modelos.",
         "titulo14": "QueryBuilder (★)",
         "Descrip14": "Herramienta de Laravel que permite escribir consultas SQL robustas sin necesidad de usar Modelos.",
