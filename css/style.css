@@ -9,10 +9,11 @@
     font-family: Playfair, serif; 
 }
 body{
-    background-image: url('../img/OC1Y900.jpg');
+    background-color: rgb(73, 134, 136);
     background-size: 100px 8px;    
     min-width: 432px;
     min-height: 432px;
+    top: 40px;
 }
 .header-content{
     max-width: 1200px;
@@ -21,6 +22,7 @@ body{
     justify-content: space-between;
     flex-direction: row-reverse;
     flex-wrap: wrap;
+    box-shadow: 0 4px 25px -22px black;
 }
 .menu nav ul li a{
     opacity: 0.5;
@@ -307,7 +309,7 @@ span{
   html {
     transform: rotate(-90deg);
     transform-origin: left top;
-    width: 100vh;
+    width: 95vh;
     height: 100vw;
     overflow: hidden;
     position: absolute;
@@ -315,11 +317,11 @@ span{
     left: 0;
     }
     .container-all {
-        width: 100vw;
+        width: 95vw;
         height: 100vh;
     }
     .inicio {
-        width: 100vh;
+        width: 95vh;
         height: 100vw;
     }
 } 
