@@ -10,8 +10,8 @@
         "str08": "Portuguese"
     },     
     "profile": {
-        "saludo": "Hello, I am Richard",
-        "presentacion": "Although I am starting my <span>Full Stack</span> training at 60, I already have Back-End experience in Mainframe, programming <span>Cobol</span> for more than 18 years in AFP and Banking. I enjoy learning and I am passionate about technology. I hope you find my portfolio interesting and that we can work together in the future. Thank you for visiting my portfolio!"
+        "saludo": "<br> Hello, I am <span>Richard</span>",
+        "presentacion": "<br> Although I am starting my <span>Full Stack</span> training at 60, I already have Back-End experience in Mainframe, programming <span>Cobol</span> for more than 18 years in AFP and Banking. I enjoy learning and I am passionate about technology. I hope you find my portfolio interesting and that we can work together in the future. Thank you for visiting my portfolio!"
     },
     "experiencia": {
         "lugar01": "APIUX TECH",

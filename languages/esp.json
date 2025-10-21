@@ -10,8 +10,8 @@
         "str08": "Portugués"
     },    
     "profile": {
-        "saludo": "Hola, soy Richard",
-        "presentacion": "Aunque empiezo a mis 60 en formándome en <span>Full Stack</span>, ya tengo experiencia Back End en Mainframe, programando <span>Cobol</span> por más de 18 años en AFP y Banca. Me gusta aprender y me apasiona la tecnología. Espero que mi portafolio sea de su agrado y que podamos trabajar juntos en el futuro. ¡Gracias por visitar mi portafolio!"
+        "saludo": "<br> Hola! soy <span>Richard</span>",
+        "presentacion": "<br> Aunque empiezo a mis 60 formándome en <span>Full Stack</span>, ya tengo experiencia Back End en Mainframe, programando <span>Cobol</span> por más de 18 años en AFP y Banca. Me gusta aprender y me apasiona la tecnología. Espero que mi portafolio sea de su agrado y que podamos trabajar juntos en el futuro.<br> ¡Gracias por visitar mi portafolio!"
     },
     "experiencia": {
         "lugar01": "APIUX TECH",
